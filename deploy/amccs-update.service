@@ -1,0 +1,8 @@
+[Unit]
+Description=Refresh AMCCS repository
+
+[Service]
+Type=oneshot
+User=__AMCCS_USER__
+WorkingDirectory=__INSTALL_DIR__
+ExecStart=/bin/bash -lc '. .venv/bin/activate && git pull --ff-only && pip install -e .'

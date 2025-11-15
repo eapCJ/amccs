@@ -1,0 +1,15 @@
+settings:
+  request_timeout_seconds: 10
+  adb_command_timeout_seconds: 5
+  camera_defaults:
+    package: com.android.camera
+    activity: .CameraActivity
+    photo_location: /sdcard/DCIM/Camera
+    zoom_point:
+      x: 540
+      y: 960
+    delays:
+      camera_open: 1.5
+      zoom: 0.5
+      photo_capture: 0.8
+      photo_save: 1.0

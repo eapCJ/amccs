@@ -1,0 +1,14 @@
+[Unit]
+Description=AMCCS Android Multi-cam Service
+After=network-online.target
+
+[Service]
+Type=simple
+User=__AMCCS_USER__
+WorkingDirectory=__INSTALL_DIR__
+EnvironmentFile=/etc/amccs.env
+ExecStart=__INSTALL_DIR__/.venv/bin/uvicorn amccs.service:create_app --factory --host 0.0.0.0 --port 8080
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

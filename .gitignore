@@ -1,0 +1,28 @@
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE / OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage / reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Local configuration
+config.yaml
